@@ -1,0 +1,23 @@
+div {
+  width: 90%;
+  height: 100px;
+  border: 2px solid #333;
+  margin: 10px auto;
+}
+
+/*Un dégradé linéaire bleu → vert*/
+#ex1 {
+  background: linear-gradient(RGB(0, 120, 240), RGB(0, 240, 120));
+}
+/* Un dégradé linéaire bleu → vert semi transparent*/
+#ex2 {
+  background: linear-gradient(RGBa(0, 120, 240, 0.5), RGBa(0, 240, 120, 0.5));
+}
+/*Défradé bleu semi transparent au début/ opaque au milieu/ semi transparent à la fin*/
+#ex3 {
+  background: linear-gradient(
+    RGBa(0, 120, 240, 0.5),
+    RGB(0, 120, 240),
+    RGBa(0, 120, 240, 0.5)
+  );
+}
